@@ -1,3 +1,24 @@
 baseURL = 'http://example.org/'
 languageCode = 'en-us'
 title = 'My New Hugo Site'
+
+[module]
+[[module.imports]]
+  path = 'github.com/LordMathis/hugo-theme-nightfall'
+
+[params]
+author = 'Droid Master'
+user = 'sieben'
+hostname = 'droid.in.th'
+
+[[params.social]]
+key = 0
+name = "github"
+url = "https://github.com/sevenseconds"
+icon = "fa-brands fa-github"  # Add link to your icon font to `layouts/partials/custom-head.html`
+
+[menu]
+  [[munu.header]]
+    name = 'posts'
+    weight = 0
+    url = '/posts'
